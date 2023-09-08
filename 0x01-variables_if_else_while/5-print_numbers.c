@@ -1,17 +1,17 @@
 #include <stdio.h>
 /**
- * main - alphabets
+ * main - numbers
  * Return: Always 0
  */
 int main(void)
 
 {
-	char letter;
+	char num;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (num = '0'; num <= '9'; num++)
 	{
-	if (letter != 'e' && letter != 'q')
-	putchar(letter);
+	if (num != '0' && num != '9')
+	putchar(num);
 	}
 
 	putchar('\n');
