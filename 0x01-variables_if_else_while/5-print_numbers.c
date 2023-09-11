@@ -1,16 +1,23 @@
 #include <stdio.h>
 /**
- * main - numbers
+ * main - numbers below 9
  * Return: Always 0
  */
 int main(void)
-
 {
-	int i;
+	int num;
 
-	for (i = 0; i < 10; i++)
+	num = 0;
+
+	while (num <= 9)
 	{
-	printf("%d", i);
+	putchar(num + '0');
+	if (num < 9)
+	{
+		putchar(',');
+		putchar(' ');
+	}
+	num++;
 	}
 
 	putchar('\n');
