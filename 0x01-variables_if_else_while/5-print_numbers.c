@@ -5,21 +5,12 @@
  */
 int main(void)
 {
-	int num;
+	int x;
 
-	num = 0;
-
-	while (num <= 9)
+	for (x = 0; x < 10; x++)
 	{
-	putchar(num + '0');
-	if (num < 9)
-		{
-		putchar(',');
-		putchar(' ');
-		}
-	num++;
+	printf("%d", x);
 	}
 
-	putchar('\n');
 	return (0);
 }
