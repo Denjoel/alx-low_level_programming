@@ -3,19 +3,19 @@
 /**
  * print_last_digit - entry point
  * Description: function that ptints the lasst digit of a number.
- * @a: number to compute last digit
- * Return: Last digit
+ * @n: number to compute last digit
+ * Return: value of last digit
  */
 
-int print_last_digit(int a)
+int print_last_digit(int n)
 {
-	int last_digit;
+	int a;
 
-	last_digit = a % 10;
-	if (last_digit < 10)
-	{
-		last_digit = last_digit * -1;
-	}
-	_putchar(last_digit + '0');
-	return (last_digit);
+	if (n < 0)
+	n = -n;
+	a = n % 10;
+	if (a < 0)
+		a = -a;
+	_putchar(a + '0');
+	return (a);
 }
