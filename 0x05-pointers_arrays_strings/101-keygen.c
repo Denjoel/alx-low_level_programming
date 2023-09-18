@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdib.h>
+#include <stdlib.h>
 #include <time.h>
 
 /**
@@ -17,7 +17,7 @@ int main(void)
 
 	for (i = 0; i < 100; i++)
 	{
-		pass[i] = rad() % 67;
+		pass[i] = rand() % 67;
 		sum += (pass[i] + '0');
 		putchar(pass[i] + '0');
 
