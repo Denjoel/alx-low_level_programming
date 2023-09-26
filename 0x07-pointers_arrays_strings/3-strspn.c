@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strpn - main function
+ * _strspn - main function
  * @s: Function parameter
  * @accept: Function parameter
  * Return: Always 0
